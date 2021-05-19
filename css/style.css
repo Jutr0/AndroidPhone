@@ -6,15 +6,30 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#container {
   background-image: url("../img/tapeta.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
-  background-attachment: fixed;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 100;
+  width: 100%;
+  max-width: 449px;
+  min-width: 370px;
 }
 
 .dashboard {
@@ -23,11 +38,12 @@ body {
   background-color: #00000024;
   font-weight: 500;
   margin-bottom: 30px;
-}
-
-.dashboard #dashboard_right {
-  position: absolute;
-  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .clock {
@@ -224,7 +240,7 @@ body {
 }
 
 .nav_buttons {
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 60px;
   width: 100%;
